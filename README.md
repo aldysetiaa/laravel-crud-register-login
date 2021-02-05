@@ -2,14 +2,13 @@ Cara install project laravel
 1. Download project
 2. ``` install composer ``` pada direktori project
 - apabila ada kendala (error) 
-``` Script @php artisan package:discover handling the post-autoload-dump event returned with error code 1  
-
+```Script @php artisan package:discover handling the post-autoload-dump event returned with error code 1 
 In PackageManifest.php line 122:
-
-  Undefined index: name ```
+Undefined index: name
+```
 
 edit file composer.json
-bagian 
+bagian  
 ```
 "extra": {
         "laravel": {
