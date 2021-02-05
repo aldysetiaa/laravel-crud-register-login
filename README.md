@@ -10,7 +10,7 @@ In PackageManifest.php line 122:
 
 edit file composer.json
 bagian 
-
+```
 "extra": {
         "laravel": {
             "dont-discover": [ 
@@ -28,7 +28,7 @@ menjadi
             ]
         }
     },
-
+```
 
 
 lakukan langkah berikutnya
@@ -37,6 +37,7 @@ lakukan langkah berikutnya
 3. (composer update) pada cmd, tunggu hingga proses selesai
 
 4. php artisan migrate untuk database baru dan kosong, jangan lupa dbuat terlebih dulu database nya di phpmyadmin dan edit file database.php di folder config bagian mysql sesuaikan dngan setingan di komputer anda
+```
     'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'localhost'),
@@ -51,7 +52,7 @@ lakukan langkah berikutnya
             'strict' => true,
             'engine' => null,
         ],
-
+```
 
 5. setelah selesai, aktifkan server dengan : php artisan serve
 note jika serve aktif namun di browser 127.0.0.1:8000 error 500 Whoops, something went wrong on our servers
